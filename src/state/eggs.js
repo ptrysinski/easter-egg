@@ -1,7 +1,8 @@
 const PAINT_EGG = 'egg/PAINT_EGG'
 
-export const eggPaintedActionCreator = () => ({
+export const eggPaintedActionCreator = (value) => ({
     type: PAINT_EGG,
+    value,
 })
 
 const initialState = {
@@ -13,7 +14,7 @@ export default (state = initialState, action) => {
         case PAINT_EGG:
             return {
                 ...state,
-                isPainted: true
+                isPainted: action.value
             }
         default:
             return state

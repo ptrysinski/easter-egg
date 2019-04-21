@@ -8,7 +8,7 @@ const EggNotPainted = (props) => {
             <img
                 src={egg}
                 alt={'Zwykłe jajko'}
-                onClick={props.paintEgg}
+                onClick={() => props.paintEgg(true)}
             />
             <h3>
                 Kliknij by pomalować jajko
