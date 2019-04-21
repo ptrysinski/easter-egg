@@ -1,16 +1,17 @@
 import React from 'react'
 import paintedEgg from './egg-painted.svg'
+import './Eggs.css'
 
 const EggPainted = (props) => {
     return (
         <div>
-            <h3>
-                Wesołych świąt
-			</h3>
             <img
                 src={paintedEgg}
                 alt={'Pisanka'}
             />
+            <h3>
+                Wesołych świąt
+			</h3>
         </div>
     )
 }
